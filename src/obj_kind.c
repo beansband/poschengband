@@ -234,7 +234,7 @@ bool object_is_rare(object_type *o_ptr)
         break;
 
     case TV_SOFT_ARMOR:
-        if (o_ptr->sval == SV_KUROSHOUZOKU ||
+        if (o_ptr->sval == SV_BLACK_CLOTHES ||
             o_ptr->sval == SV_ABUNAI_MIZUGI) return TRUE;
         break;
 

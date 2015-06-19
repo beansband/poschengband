@@ -1867,7 +1867,6 @@ enum _mimic_types {
 #define SV_PADDED_ARMOR                 10  /*  4 */
 #define SV_LEATHER_SCALE_MAIL           11
 #define SV_LEATHER_JACK                 12
-#define SV_KUROSHOUZOKU                 13  /* Black Clothes */
 #define SV_BLACK_CLOTHES                13
 #define SV_STONE_AND_HIDE_ARMOR         15  /* 15 */
 #define SV_ABUNAI_MIZUGI                50  /* Swimsuit */
