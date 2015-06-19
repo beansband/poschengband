@@ -365,7 +365,7 @@ void chaos_warrior_reward(void)
                     dummy2 = SV_ZWEIHANDER;
                     break;
                 case 38:
-                    dummy2 = SV_HAYABUSA;
+                    dummy2 = SV_FALCON_SWORD;
                     break;
                 default:
                     dummy2 = SV_BLADE_OF_CHAOS;

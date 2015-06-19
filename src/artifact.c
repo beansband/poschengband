@@ -1875,7 +1875,7 @@ s32b create_artifact(object_type *o_ptr, u32b mode)
 
     if (no_artifacts) return 0;
     
-    if (o_ptr->tval == TV_SWORD && o_ptr->sval == SV_HAYABUSA)
+    if (o_ptr->tval == TV_SWORD && o_ptr->sval == SV_FALCON_SWORD)
         is_falcon_sword = TRUE;
 
     immunity_hack = FALSE;

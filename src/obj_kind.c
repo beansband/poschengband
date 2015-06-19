@@ -206,7 +206,7 @@ bool object_is_rare(object_type *o_ptr)
             o_ptr->sval == SV_DIAMOND_EDGE ||
             o_ptr->sval == SV_POISON_NEEDLE ||
             o_ptr->sval == SV_DRAGON_FANG ||
-            o_ptr->sval == SV_HAYABUSA) return TRUE;
+            o_ptr->sval == SV_FALCON_SWORD) return TRUE;
         break;
 
     case TV_SHIELD:
