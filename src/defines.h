@@ -4899,18 +4899,15 @@ extern int PlayerUID;
 #define MON_LAW_DRAKE             502
 #define MON_BALANCE_DRAKE         503
 #define MON_ETHEREAL_DRAKE        504
-#define MON_ETHER_DRAKE   504
 #define MON_GOEMON        505
 #define MON_CHERUB        511
 #define MON_FIRE_ELEMENTAL  510
 #define MON_WATER_ELEMENTAL 512
-#define MON_WATER_ELEM    512
 #define MON_MULTI_HUED_HOUND  513
 #define MON_JURT           517
 #define MON_LICH           518
 #define MON_MASTER_VAMPIRE 520
 #define MON_GREATER_MUMMY  522
-#define MON_BLOODLETTER    523
 #define MON_BLOODLETTER_KHORNE 523
 #define MON_EARTH_ELEMENTAL 525
 #define MON_AIR_ELEMENTAL   526
@@ -4918,7 +4915,6 @@ extern int PlayerUID;
 #define MON_DREAD         534
 #define MON_OLOG         538
 #define MON_HALFLING_S    539
-#define MON_GRAV_HOUND    540
 #define MON_GRAVITY_HOUND     540
 #define MON_ACIDIC_CYTOPLASM 541
 #define MON_INERTIA_HOUND     542
@@ -4975,7 +4971,6 @@ extern int PlayerUID;
 #define MON_MASTER_LICH         658
 #define MON_RINALDO             660
 #define MON_ARCHON              661
-#define MON_UND_BEHOLDER        664
 #define MON_UNDEAD_BEHOLDER     664
 #define MON_SHADOW_DEMON        665
 #define MON_IRON_LICH           666
@@ -4996,13 +4991,11 @@ extern int PlayerUID;
 #define MON_ULTRA_PALADIN       699
 #define MON_LEPRECHAUN_FANATIC  700
 #define MON_DRACOLICH           701
-#define MON_G_TITAN             702
 #define MON_GREATER_TITAN       702
 #define MON_ENT                 708
 #define MON_HRU                 709
 #define MON_FAFNER              712
 #define MON_GLAURUNG            715
-#define MON_G_BALROG            720
 #define MON_GREATER_BALROG      720
 #define MON_NETHER_HOUND        724
 #define MON_TIME_HOUND          725
@@ -5014,7 +5007,6 @@ extern int PlayerUID;
 #define MON_SANTACLAUS          733
 #define MON_LORD_CHAOS          737
 #define MON_KHAMUL              738
-#define MON_TINDALOS            739
 #define MON_HOUND_OF_TINDALOS   739
 #define MON_LESSER_KRAKEN       740
 #define MON_DEMILICH            742
@@ -5041,7 +5033,6 @@ extern int PlayerUID;
 #define MON_ARCHLICH            776
 #define MON_CHAOS_HOUND         779
 #define MON_VLAD                780
-#define MON_ULT_BEHOLDER        781
 #define MON_ULTIMATE_BEHOLDER   781
 #define MON_GREAT_WYRM_OF_CHAOS 783
 #define MON_GREAT_WYRM_OF_LAW   784
@@ -5054,9 +5045,7 @@ extern int PlayerUID;
 #define MON_JULIAN              794
 #define MON_BLACK_REAVER        798
 #define MON_CAINE               799
-#define MON_MASTER_Q            800
 #define MON_MASTER_QUYLTHULG    800
-#define MON_G_DRACONIC_Q        801
 #define MON_GREATER_DRACONIC_QUYLTHULG  801
 #define MON_GREATER_ROTTING_QUYLTHULG   802
 #define MON_VECNA               804
@@ -5082,7 +5071,6 @@ extern int PlayerUID;
 #define MON_SURTUR              837
 #define MON_TARRASQUE           838
 #define MON_LUNGORTHIN          839
-#define MON_CYBER_KING          843
 #define MON_OREMORJ             843
 #define MON_WYRM_POWER          847
 #define MON_NODENS              849
@@ -5104,7 +5092,6 @@ extern int PlayerUID;
 #define MON_METAL_BABBLE        871
 #define MON_OROCHI              872
 #define MON_ECHIZEN             873
-#define MON_SPECT_WYRM          874
 #define MON_SPECTRAL_WYRM       874
 #define MON_STORM_TROLL         875
 #define MON_DIO                 878
@@ -5122,9 +5109,7 @@ extern int PlayerUID;
 #define MON_SMALL_KRAKEN        903
 #define MON_POLEAXE_OF_ANIMATED_ATTACK 908
 #define MON_MYSTIC              915
-#define MON_MASTER_MYS          916
 #define MON_MASTER_MYSTIC       916
-#define MON_G_MASTER_MYS        917
 #define MON_GRAND_MASTER_MYSTIC 917
 #define MON_IE                  921
 #define MON_TSUCHINOKO          926
@@ -5145,7 +5130,6 @@ extern int PlayerUID;
 #define MON_BIKETAL             945
 #define MON_RICH                948
 #define MON_IKETA               949
-#define MON_B_DEATH_SWORD       953
 #define MON_BROKEN_DEATH_SWORD  953
 #define MON_YASE_HORSE          955
 #define MON_HORSE               956
@@ -5192,7 +5176,6 @@ extern int PlayerUID;
 #define MON_DEATH_BEAST         1082
 #define MON_ULT_MAGUS           1083
 #define MON_DEATH_SCYTHE        1084
-#define MON_SPELLWARP           1085
 #define MON_SPELLWARP_AUTOMATON 1085
 #define MON_TALOS               1086
 #define MON_TONBERRY            1087

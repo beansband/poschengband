@@ -3181,7 +3181,7 @@ bool make_attack_spell(int m_idx, bool ticked_off)
                 {
                     for (k = 0; k < num; k++)
                     {
-                        summon_named_creature(m_idx, y, x, MON_SPELLWARP, mode);
+                        summon_named_creature(m_idx, y, x, MON_SPELLWARP_AUTOMATON, mode);
                     }
                 }
                 break;
@@ -3642,7 +3642,7 @@ bool make_attack_spell(int m_idx, bool ticked_off)
                     int num = 3 + randint1(3);
                     for (k = 0; k < num; k++)
                     {
-                        count += summon_named_creature(m_idx, y, x, MON_SPELLWARP, mode);
+                        count += summon_named_creature(m_idx, y, x, MON_SPELLWARP_AUTOMATON, mode);
                     }
                 }
                 break;

@@ -1284,7 +1284,7 @@ void monster_death(int m_idx, bool drop_item)
             msg_print("The Variant Maintainer is dead, but his crappy code remains!");
         break;
     }
-    case MON_BLOODLETTER:
+    case MON_BLOODLETTER_KHORNE:
         /* Bloodletters of Khorne may drop a blade of chaos */
         if (drop_chosen_item && (randint1(100) < 15))
         {
@@ -1414,7 +1414,7 @@ void monster_death(int m_idx, bool drop_item)
         create_named_art(ART_CHAOS, py, px);
         break;
 
-    case MON_B_DEATH_SWORD:
+    case MON_BROKEN_DEATH_SWORD:
         if (drop_chosen_item)
         {
             /* Get local object */

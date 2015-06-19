@@ -1008,7 +1008,7 @@ bool mon_is_type(int r_idx, int type)
         break;
     case SUMMON_GHOST:
         if (r_idx == MON_SHADOW_DEMON) return FALSE;
-        if (r_ptr->d_char == 'G' || r_idx == MON_SPECT_WYRM) return TRUE;
+        if (r_ptr->d_char == 'G' || r_idx == MON_SPECTRAL_WYRM) return TRUE;
         break;
     case SUMMON_KRAKEN:
         if (r_idx == MON_GREATER_KRAKEN || r_idx == MON_LESSER_KRAKEN) return TRUE;

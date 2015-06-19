@@ -767,7 +767,7 @@ static void _summon_commando_team_spell(int cmd, variant *res)
             
         for (i = 0; i < num; i++)
         {
-            summon_named_creature(-1, y, x, MON_G_MASTER_MYS, mode);
+            summon_named_creature(-1, y, x, MON_GRAND_MASTER_MYSTIC, mode);
         }                
         var_set_bool(res, TRUE);
         break;

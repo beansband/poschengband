@@ -2313,7 +2313,7 @@ bool project_m(int who, int r, int y, int x, int dam, int typ, int flg, bool see
             }
             if (r_ptr->flagsr & RFR_RES_WATE)
             {
-                if ((m_ptr->r_idx == MON_WATER_ELEM) || (m_ptr->r_idx == MON_UNMAKER))
+                if ((m_ptr->r_idx == MON_WATER_ELEMENTAL) || (m_ptr->r_idx == MON_UNMAKER))
                 {
                     note = " is immune.";
 

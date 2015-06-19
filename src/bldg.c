@@ -1342,9 +1342,9 @@ void battle_monsters(void)
                 case MON_GHOST:
                     power[i] /= 2;
                     break;
-                case MON_UND_BEHOLDER:
+                case MON_UNDEAD_BEHOLDER:
                 case MON_SANTACLAUS:
-                case MON_ULT_BEHOLDER:
+                case MON_ULTIMATE_BEHOLDER:
                 case MON_UNGOLIANT:
                 case MON_ATLACH_NACHA:
                 case MON_Y_GOLONAC:
@@ -1364,8 +1364,8 @@ void battle_monsters(void)
                 case MON_CAINE:
                 case MON_JULIAN:
                 case MON_VENOM_WYRM:
-                case MON_MASTER_MYS:
-                case MON_G_MASTER_MYS:
+                case MON_MASTER_MYSTIC:
+                case MON_GRAND_MASTER_MYSTIC:
                     power[i] = power[i] * 3 / 4;
                     break;
                 case MON_VORPAL_BUNNY:
@@ -1373,7 +1373,7 @@ void battle_monsters(void)
                 case MON_GORBAG:
                 case MON_LOGRUS_MASTER:
                 case MON_JURT:
-                case MON_GRAV_HOUND:
+                case MON_GRAVITY_HOUND:
                 case MON_SHIM_VOR:
                 case MON_JUBJUB:
                 case MON_CLUB_DEMON:
@@ -1385,7 +1385,7 @@ void battle_monsters(void)
                 case MON_SKY_DRAKE:
                 case MON_GERARD:
                 case MON_G_CTHULHU:
-                case MON_SPECT_WYRM:
+                case MON_SPECTRAL_WYRM:
                 case MON_BAZOOKER:
                 case MON_GCWADL:
                 case MON_KIRIN:
@@ -1408,7 +1408,7 @@ void battle_monsters(void)
                 case MON_STORMBRINGER:
                 case MON_TIME_HOUND:
                 case MON_PLASMA_HOUND:
-                case MON_TINDALOS:
+                case MON_HOUND_OF_TINDALOS:
                 case MON_CHAOS_VOR:
                 case MON_AETHER_VOR:
                 case MON_AETHER_HOUND:
@@ -1431,7 +1431,7 @@ void battle_monsters(void)
                     break;
                 case MON_ROLENTO:
                 case MON_CYBER:
-                case MON_CYBER_KING:
+                case MON_OREMORJ:
                 case MON_UNICORN_ORD:
                     power[i] = power[i] * 5 / 3;
                     break;
