@@ -25,6 +25,10 @@ bool is_pval_flag(int which)
     case TR_SPELL_CAP:
     case TR_WEAPONMASTERY:
     case TR_LIFE:
+    case TR_XTRA_MIGHT:
+    case TR_XTRA_SHOTS:
+    case TR_MAGIC_RESISTANCE:
+    case TR_DEVICE_POWER:
         return TRUE;
     }
     return FALSE;
