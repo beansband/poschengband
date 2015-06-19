@@ -1947,7 +1947,7 @@ player_pact pact_info[MAX_PACTS] =
     },
 };
 
-player_seikaku seikaku_info[MAX_SEIKAKU] =
+player_seikaku seikaku_info[MAX_PERSONALITIES] =
 {
     {
         "Ordinary",

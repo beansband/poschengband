@@ -39,7 +39,7 @@ static cptr pact_desc[MAX_PACTS] =
         "own ammo. At high levels, they gain the power of Dimension Door. Making a pact with Aberrations "
         "will reduce damage done to all humanoids (h) and people (p) by a substantial amount.",
 };
-static cptr seikaku_jouhou[MAX_SEIKAKU] =
+static cptr seikaku_jouhou[MAX_PERSONALITIES] =
 {
 "\"Ordinary\" is a personality with no special skills or talents, with unmodified stats and skills.",
 "\"Mighty\" raises your physical stats and skills, but reduces stats and skills which influence magic. It makes your stats suitable for a warrior. Also it directly influences your hit-points and spell fail rate.",

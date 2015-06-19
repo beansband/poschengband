@@ -880,7 +880,6 @@ enum _mimic_types {
 #define PERS_PATIENT     10
 #define PERS_MUNCHKIN    11
 #define PERS_CRAVEN      12
-#define MAX_SEIKAKU      13
 #define MAX_PERSONALITIES 13
 
 /*** Screen Locations ***/
