@@ -531,7 +531,7 @@ bool screen_object(object_type *o_ptr, u32b mode)
 
     }
 
-    if ((o_ptr->tval == TV_SWORD) && (o_ptr->sval == SV_DOKUBARI))
+    if ((o_ptr->tval == TV_SWORD) && (o_ptr->sval == SV_POISON_NEEDLE))
     {
         info[i++] = "It will attempt to kill a monster instantly.";
 

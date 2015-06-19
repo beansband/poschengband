@@ -960,7 +960,7 @@ s32b weapon_cost(object_type *o_ptr)
     object_flags(o_ptr, flgs);
 
     /* Hacks for objects with "hidden" powers */
-    if (o_ptr->tval == TV_SWORD && o_ptr->sval == SV_DOKUBARI)
+    if (o_ptr->tval == TV_SWORD && o_ptr->sval == SV_POISON_NEEDLE)
         return 10000;
     if (o_ptr->tval == TV_SWORD && o_ptr->sval == SV_RUNESWORD)
         return 100000;

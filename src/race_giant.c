@@ -45,7 +45,7 @@ static bool _weapon_is_small(int tval, int sval)
         case SV_BASILLARD:
         case SV_SHORT_SWORD:
         case SV_SABRE:
-        case SV_DOKUBARI:
+        case SV_POISON_NEEDLE:
         case SV_HAYABUSA:
         case SV_DRAGON_FANG:
             return TRUE;

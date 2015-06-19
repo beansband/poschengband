@@ -5043,7 +5043,7 @@ void apply_magic(object_type *o_ptr, int lev, u32b mode)
             }
             else 
             {
-                if (!(o_ptr->sval == SV_DOKUBARI))
+                if (!(o_ptr->sval == SV_POISON_NEEDLE))
                 {
                     if (power) _create_weapon(o_ptr, lev, power, mode);
                 }
@@ -7859,7 +7859,7 @@ static bool item_tester_hook_melee_ammo(object_type *o_ptr)
         }
         case TV_SWORD:
         {
-            if (o_ptr->sval != SV_DOKUBARI) return (TRUE);
+            if (o_ptr->sval != SV_POISON_NEEDLE) return (TRUE);
         }
     }
 

@@ -204,7 +204,7 @@ bool object_is_rare(object_type *o_ptr)
     case TV_SWORD:
         if (o_ptr->sval == SV_BLADE_OF_CHAOS ||
             o_ptr->sval == SV_DIAMOND_EDGE ||
-            o_ptr->sval == SV_DOKUBARI ||
+            o_ptr->sval == SV_POISON_NEEDLE ||
             o_ptr->sval == SV_DRAGON_FANG ||
             o_ptr->sval == SV_HAYABUSA) return TRUE;
         break;
@@ -408,7 +408,7 @@ bool object_is_equipment(object_type *o_ptr)
  */
 bool object_refuse_enchant_weapon(object_type *o_ptr)
 {
-    if (o_ptr->tval == TV_SWORD && o_ptr->sval == SV_DOKUBARI) return TRUE;
+    if (o_ptr->tval == TV_SWORD && o_ptr->sval == SV_POISON_NEEDLE) return TRUE;
     if (o_ptr->tval == TV_SWORD && o_ptr->sval == SV_RUNESWORD) return TRUE;
 
     return FALSE;

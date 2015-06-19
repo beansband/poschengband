@@ -2642,7 +2642,7 @@ s32b create_artifact(object_type *o_ptr, u32b mode)
         remove_flag(o_ptr->art_flags, TR_XTRA_MIGHT);
     }
 
-    if ((o_ptr->tval == TV_SWORD) && (o_ptr->sval == SV_DOKUBARI))
+    if ((o_ptr->tval == TV_SWORD) && (o_ptr->sval == SV_POISON_NEEDLE))
     {
         o_ptr->to_h = 0;
         o_ptr->to_d = 0;
