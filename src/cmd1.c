@@ -3333,7 +3333,7 @@ static bool py_attack_aux(int y, int x, bool *fear, bool *mdeath, s16b hand, int
             if (poison_needle || mode == HISSATSU_KYUSHO || mode == MYSTIC_KILL)
             {
                 if ( randint1(randint1(r_ptr->level/7)+5) == 1 
-                  && (!(r_ptr->flags1 & RF1_UNIQUE) || m_ptr->r_idx == MON_HAGURE2) 
+                  && (!(r_ptr->flags1 & RF1_UNIQUE) || m_ptr->r_idx == MON_THE_METAL_BABBLE) 
                   && !(r_ptr->flags7 & RF7_UNIQUE2))
                 {
                     k = m_ptr->hp + 1;

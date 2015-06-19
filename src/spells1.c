@@ -1943,8 +1943,8 @@ bool project_m(int who, int r, int y, int x, int dam, int typ, int flg, bool see
 
             if (r_ptr->flagsr & RFR_RES_ALL)
             {
-                if ( m_ptr->r_idx == MON_HAGURE
-                  || m_ptr->r_idx == MON_HAGURE2
+                if ( m_ptr->r_idx == MON_METAL_BABBLE
+                  || m_ptr->r_idx == MON_THE_METAL_BABBLE
                   || who == 0 )
                 {
                     note = " is immune.";

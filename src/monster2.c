@@ -1053,7 +1053,7 @@ bool mon_is_type(int r_idx, int type)
         if (r_ptr->d_char == 'U' && (r_ptr->flags4 & RF4_ROCKET)) return TRUE;
         break;
     case SUMMON_KIN:
-        if (r_ptr->d_char == summon_kin_type && r_idx != MON_HAGURE) return TRUE;
+        if (r_ptr->d_char == summon_kin_type && r_idx != MON_METAL_BABBLE) return TRUE;
         break;
     case SUMMON_DAWN:
         if (r_idx == MON_DAWN) return TRUE;
@@ -4025,7 +4025,7 @@ bool alloc_horde(int y, int x)
         r_ptr = &r_info[r_idx];
 
         if (r_ptr->flags1 & RF1_UNIQUE) continue;
-        if (r_idx == MON_HAGURE) continue;
+        if (r_idx == MON_METAL_BABBLE) continue;
         if (r_ptr->flags4 & RF4_THROW) continue;
 
         break;

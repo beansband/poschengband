@@ -3616,7 +3616,7 @@ void do_cmd_fire_aux2(int item, object_type *bow, int sx, int sy, int tx, int ty
 
                     if (shoot_hack == SHOOT_NEEDLE)
                     {
-                        if ((randint1(randint1(r_ptr->level/7)+5) == 1) && (!(r_ptr->flags1 & RF1_UNIQUE) || m_ptr->r_idx == MON_HAGURE2) && !(r_ptr->flags7 & RF7_UNIQUE2))
+                        if ((randint1(randint1(r_ptr->level/7)+5) == 1) && (!(r_ptr->flags1 & RF1_UNIQUE) || m_ptr->r_idx == MON_THE_METAL_BABBLE) && !(r_ptr->flags7 & RF7_UNIQUE2))
                         {
                             char m_name[80];
                             monster_desc(m_name, m_ptr, 0);

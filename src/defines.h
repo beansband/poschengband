@@ -5088,7 +5088,6 @@ extern int PlayerUID;
 #define MON_CAAWS               866
 #define MON_CULVERIN            867
 #define MON_EBONY_MONK          870
-#define MON_HAGURE              871
 #define MON_METAL_BABBLE        871
 #define MON_OROCHI              872
 #define MON_ECHIZEN             873
@@ -5196,7 +5195,6 @@ extern int PlayerUID;
 #define MON_HERA                1105
 #define MON_DEMETER             1106
 #define MON_APHRODITE           1107
-#define MON_THE_METAL_BABBLE    1110
 #define MON_GREATER_DEMONIC_QUYLTHULG   1123
 #define MON_ROCK_GIANT          1124
 #define MON_ICE_GIANT           1125
@@ -5213,7 +5211,7 @@ extern int PlayerUID;
    code in py_attack_aux() since the needle doesn't work on uniques, but I think I have 
    that fixed now ... sigh
 */
-#define MON_HAGURE2        1110
+#define MON_THE_METAL_BABBLE    1110
 
 #define MON_ARTHUR        1111
 #define MON_GALAHAD     1114

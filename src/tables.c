@@ -1397,7 +1397,7 @@ arena_type arena_info[MAX_ARENA_MONS + 2] =
     { MON_FENGHUANG,     TV_STAFF,  SV_STAFF_THE_MAGI             },
     { MON_WYRM_POWER,    TV_ROD,    SV_ROD_HEALING                },
     { 0,                 0,         0                             }, /* Victory prizing */
-    { MON_HAGURE,        TV_SCROLL, SV_SCROLL_ARTIFACT            },
+    { MON_METAL_BABBLE,  TV_SCROLL, SV_SCROLL_ARTIFACT            },
 };
 
 

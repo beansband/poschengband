@@ -1447,7 +1447,7 @@ void battle_monsters(void)
                 case MON_ECHIZEN:
                     power[i] *= 9;
                     break;
-                case MON_HAGURE:
+                case MON_METAL_BABBLE:
                     power[i] *= 100000;
                     break;
                 default:
