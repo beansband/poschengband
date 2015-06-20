@@ -3723,6 +3723,7 @@ static bool research_mon(void)
 
                 /* Get maximal info about this monster */
                 lore_do_probe(r_idx);
+                if (!r_info[r_idx].r_sights) r_info[r_idx].r_sights = 1;
 
                 /* Save this monster ID */
                 monster_race_track(r_idx);
