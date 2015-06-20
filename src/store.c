@@ -326,8 +326,6 @@ static void purchase_analyze(s32b price, s32b value, s32b guess)
         msg_print(comment_7c[randint0(MAX_COMMENT_7C)]);
 
         if (one_in_(4))
-            virtue_add(VIRTUE_HONOUR, -1);
-        else if (one_in_(4))
             virtue_add(VIRTUE_HONOUR, 1);
 
         /* Sound */
@@ -340,8 +338,6 @@ static void purchase_analyze(s32b price, s32b value, s32b guess)
         /* Comment */
         msg_print(comment_7d[randint0(MAX_COMMENT_7D)]);
 
-        if (one_in_(2))
-            virtue_add(VIRTUE_HONOUR, -1);
         if (one_in_(4))
             virtue_add(VIRTUE_HONOUR, 1);
 
