@@ -1764,7 +1764,7 @@ enum _mimic_types {
 #define SV_LOCHABER_AXE                 28    /* 3d8 */
 #define SV_HEAVY_LANCE                  29  /* 4d8 */
 #define SV_SCYTHE_OF_SLICING            30    /* 8d4 */
-#define SV_TSURIZAO                     40    /* 1d1 */
+#define SV_FISHING_POLE                 40    /* 1d1 */
 #define SV_DEATH_SCYTHE                 50    /* 10d10 */
 #define SV_DEATH_SCYTHE_HACK            51    /* 10d10 */
 
@@ -1868,8 +1868,8 @@ enum _mimic_types {
 #define SV_LEATHER_JACK                 12
 #define SV_BLACK_CLOTHES                13
 #define SV_STONE_AND_HIDE_ARMOR         15  /* 15 */
-#define SV_ABUNAI_MIZUGI                50  /* Swimsuit */
-#define SV_YOIYAMI_ROBE                 60  /* Robe of Twilight */
+#define SV_SEXY_SWIMSUIT                50  /* Swimsuit */
+#define SV_ROBE_OF_TWILIGHT             60  /* Robe of Twilight */
 #define SV_NAMAKE_ARMOR                 63
 
 /* The "sval" codes for TV_HARD_ARMOR */

@@ -57,7 +57,7 @@ static bool _weapon_is_small(int tval, int sval)
         {
         case SV_HATCHET:
         case SV_SICKLE:
-        case SV_TSURIZAO:
+        case SV_FISHING_POLE:
             return TRUE;
         }
     }

@@ -4081,8 +4081,8 @@ static void _create_armor(object_type *o_ptr, int level, int power, int mode)
             switch (o_ptr->name2)
             {
             case EGO_ROBE_TWILIGHT:
-                o_ptr->k_idx = lookup_kind(TV_SOFT_ARMOR, SV_YOIYAMI_ROBE);
-                o_ptr->sval = SV_YOIYAMI_ROBE;
+                o_ptr->k_idx = lookup_kind(TV_SOFT_ARMOR, SV_ROBE_OF_TWILIGHT);
+                o_ptr->sval = SV_ROBE_OF_TWILIGHT;
                 o_ptr->ac = 0;
                 o_ptr->to_a = 0;
                 break;
@@ -5091,7 +5091,7 @@ void apply_magic(object_type *o_ptr, int lev, u32b mode)
     }
 
     if ((o_ptr->tval == TV_SOFT_ARMOR) &&
-        (o_ptr->sval == SV_ABUNAI_MIZUGI) &&
+        (o_ptr->sval == SV_SEXY_SWIMSUIT) &&
         (p_ptr->personality == PERS_SEXY || (prace_is_(RACE_DEMIGOD) && p_ptr->psubrace == DEMIGOD_APHRODITE)))
     {
         o_ptr->pval = 3;

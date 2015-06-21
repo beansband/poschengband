@@ -6345,7 +6345,7 @@ void calc_android_exp(void)
         }
 
         if (value <= 0) continue;
-        if (object_is_(o_ptr, TV_SOFT_ARMOR, SV_ABUNAI_MIZUGI) && p_ptr->personality != PERS_SEXY) 
+        if (object_is_(o_ptr, TV_SOFT_ARMOR, SV_SEXY_SWIMSUIT) && p_ptr->personality != PERS_SEXY)
             value /= 32;
         if (value > 5000000L) value = 5000000L;
         if (o_ptr->tval == TV_DRAG_ARMOR || o_ptr->tval == TV_CARD) level /= 2;

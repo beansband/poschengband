@@ -239,7 +239,7 @@ bool object_is_rare(object_type *o_ptr)
 
     case TV_SOFT_ARMOR:
         if (o_ptr->sval == SV_BLACK_CLOTHES ||
-            o_ptr->sval == SV_ABUNAI_MIZUGI) return TRUE;
+            o_ptr->sval == SV_SEXY_SWIMSUIT) return TRUE;
         break;
 
     case TV_DRAG_ARMOR:
