@@ -117,7 +117,7 @@ static bool _add_essence(int which, int amount)
     return FALSE;
 }
 
-static bool _absorb(object_type *o_ptr)
+static bool _absorb(object_type *o_ptr, int stack)
 {
     bool result = FALSE;
     int i;
@@ -133,9 +133,9 @@ static bool _absorb(object_type *o_ptr)
 
     if (!have_flag(flags, TR_ORDER) && !have_flag(flags, TR_WILD))
     {
-        if (_add_essence(_ESSENCE_XTRA_DICE, (o_ptr->ds - k_ptr->ds)/1/*div?*/))
+        if (_add_essence(_ESSENCE_XTRA_DICE, (o_ptr->ds - k_ptr->ds) / 1/*div?*/ * stack))
             result = TRUE;
-        if (_add_essence(_ESSENCE_XTRA_DICE, (o_ptr->dd - k_ptr->dd)/1/*div?*/))
+        if (_add_essence(_ESSENCE_XTRA_DICE, (o_ptr->dd - k_ptr->dd) / 1/*div?*/ * stack))
             result = TRUE;
     }
 
@@ -146,22 +146,22 @@ static bool _absorb(object_type *o_ptr)
         {
             if (is_pval_flag(i))
             {
-                if (_add_essence(i, o_ptr->pval/div))
+                if (_add_essence(i, o_ptr->pval / div * stack))
                     result = TRUE;
             }
             else
             {
-                _essences[i]++;
-                result = TRUE;
+                if (_add_essence(i, stack))
+                    result = TRUE;
             }
         }
     }
 
-    if (_add_essence(_ESSENCE_AC, o_ptr->to_a/div))
+    if (_add_essence(_ESSENCE_AC, o_ptr->to_a / div * stack))
         result = TRUE;
-    if (_add_essence(_ESSENCE_TO_HIT, o_ptr->to_h/div))
+    if (_add_essence(_ESSENCE_TO_HIT, o_ptr->to_h / div * stack))
         result = TRUE;
-    if (_add_essence(_ESSENCE_TO_DAM, o_ptr->to_d/div))
+    if (_add_essence(_ESSENCE_TO_DAM, o_ptr->to_d / div * stack))
         result = TRUE;
 
     if (result)
@@ -608,7 +608,7 @@ static void _absorb_spell(int cmd, variant *res)
 
         object_desc(o_name, o_ptr, OD_NAME_ONLY);
         msg_format("You absorb the power of %s!", o_name);
-        _absorb(o_ptr);
+        _absorb(o_ptr, 1);
 
         if (item >= 0)
         {
@@ -1001,7 +1001,7 @@ void sword_absorb_object(object_type *o_ptr)
         char o_name[MAX_NLEN];
         object_desc(o_name, o_ptr, OD_NAME_ONLY);
         msg_format("You attempt to drain power from %s.", o_name);
-        _absorb(o_ptr);
+        _absorb(o_ptr, o_ptr->number);
     }
 }
 

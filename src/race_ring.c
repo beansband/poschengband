@@ -228,7 +228,7 @@ static bool _add_essence(int which, int amount)
     return FALSE;
 }
 
-static bool _absorb(object_type *o_ptr)
+static bool _absorb(object_type *o_ptr, int stack)
 {
     bool result = FALSE;
     int i;
@@ -248,19 +248,19 @@ static bool _absorb(object_type *o_ptr)
         {
             if (is_pval_flag(i))
             {
-                if (_add_essence(i, o_ptr->pval/div))
+                if (_add_essence(i, o_ptr->pval / div * stack))
                     result = TRUE;
             }
             else
             {
-                _essences[i]++;
+                _add_essence(i, stack);
                 if (i == TR_SH_FIRE && !have_flag(flags, TR_LITE)) _essences[TR_LITE]++;
                 result = TRUE;
             }
         }
     }
 
-    if (_add_essence(TR_ES_AC, o_ptr->to_a/div))
+    if (_add_essence(TR_ES_AC, o_ptr->to_a / div * stack))
         result = TRUE;
 
     if (obj_has_effect(o_ptr))
@@ -545,7 +545,7 @@ static void _absorb_spell(int cmd, variant *res)
 
         object_desc(o_name, o_ptr, OD_NAME_ONLY);
         msg_format("You absorb the power of %s!", o_name);
-        _absorb(o_ptr);
+        _absorb(o_ptr, 1);
 
         if (item >= 0)
         {
@@ -1664,7 +1664,7 @@ void ring_absorb_object(object_type *o_ptr)
         char o_name[MAX_NLEN];
         object_desc(o_name, o_ptr, OD_NAME_ONLY);
         msg_format("You attempt to drain power from %s.", o_name);
-        _absorb(o_ptr);
+        _absorb(o_ptr, o_ptr->number);
     }
 }
 
