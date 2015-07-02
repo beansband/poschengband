@@ -917,7 +917,7 @@ static void roff_aux(int r_idx, int mode)
     if (flags4 & RF4_DISPEL)    {vp[vn] = "dispel-magic";color[vn++] = TERM_L_WHITE;}
 
     if (flags4 & RF4_ANTI_MAGIC) {vp[vn] = "anti-magic";color[vn++] = TERM_L_WHITE;}
-    if (flags4 & RF4_ANTI_MAGIC) {vp[vn] = "polymorph";color[vn++] = TERM_L_RED;}
+    if (flags4 & RF4_POLY) {vp[vn] = "polymorph";color[vn++] = TERM_L_RED;}
 
     if (flags6 & (RF6_BLINK))           {vp[vn] = "blink-self";color[vn++] = TERM_UMBER;}
 
