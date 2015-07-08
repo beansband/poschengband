@@ -2262,6 +2262,9 @@ static void display_flag_aux(int row, int col, cptr header,
     /* Default */
     c_put_str((byte)(vuln ? TERM_RED : TERM_SLATE), ".", row, col);
 
+    /* Only equipment can be cursed, not the player. */
+    if (mode & DP_CURSE) return;
+
     /* Player flags */
     if (have_flag(f->player_flags, flag1)) c_put_str((byte)(vuln ? TERM_L_RED : TERM_WHITE), "+", row, col);
 

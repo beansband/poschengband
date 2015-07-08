@@ -1377,8 +1377,7 @@ static void _get_flags(u32b flgs[TR_FLAG_SIZE])
 
     for (i = 0; i < 6; i++) /* Assume in order */
     {
-        if (i != 0) /* Bug: Giving TR_STR marks the player as cursed ... */
-            _add_stat_flag(TR_STR + i, flgs);
+        _add_stat_flag(TR_STR + i, flgs);
         if (_essences[TR_SUST_STR + i] >= 5)
             add_flag(flgs, TR_SUST_STR + i);
     }
