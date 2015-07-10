@@ -2756,7 +2756,7 @@ bool make_attack_spell(int m_idx, bool ticked_off)
             else if (randint0(100 + rlev/2) < duelist_skill_sav(m_idx))
                 msg_print("You resist the effects!");
             else
-                (void)set_blind(12 + randint0(4), FALSE);
+                (void)set_blind(p_ptr->blind + 12 + randint0(4), FALSE);
             learn_spell(MS_BLIND);
             update_smart_learn(m_idx, DRS_BLIND);
             if (p_ptr->tim_spell_reaction && !p_ptr->fast)

@@ -344,7 +344,7 @@ static cptr _do_potion(int sval, int mode)
             {
                 if (p_ptr->pclass == CLASS_MONK) 
                     p_ptr->special_attack |= ATTACK_SUIKEN;
-                if (set_confused(randint0(20) + 15, FALSE))
+                if (set_confused(p_ptr->confused + randint0(20) + 15, FALSE))
                     device_noticed = TRUE;
             }
 
@@ -968,7 +968,7 @@ static cptr _do_potion(int sval, int mode)
             p_ptr->tsuyoshi = 1;
             set_tsuyoshi(0, TRUE);
             if (!res_save_default(RES_CHAOS))
-                set_image(50 + randint1(50), FALSE);
+                set_image(p_ptr->image + 50 + randint1(50), FALSE);
             device_noticed = TRUE;
         }
         break;
